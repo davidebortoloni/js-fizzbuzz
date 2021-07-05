@@ -14,7 +14,7 @@ for (var i = 1; i <= 100; i++) {
             partialMessage = "<div>FizzBuzz</div>";
         } else if (i % 3 == 0) {
             partialMessage = "<div>Fizz</div>";
-        } else if (i % 5 == 0) {
+        } else {
             partialMessage = "<div>Buzz</div>";
         }
     } else {
