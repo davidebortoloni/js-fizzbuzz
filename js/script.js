@@ -9,15 +9,16 @@ var fourthMessage = "";
 var partialMessage;
 
 for (var i = 1; i <= 100; i++) {
-    partialMessage = "<div>" + i + "</div>";
-    if (i % 3 == 0) {
-        partialMessage = "<div>Fizz</div>";
-    }
-    if (i % 5 == 0) {
-        partialMessage = "<div>Buzz</div>";
-    }
-    if (i % 3 == 0 && i % 5 == 0) {
-        partialMessage = "<div>FizzBuzz</div>";
+    if (i % 3 == 0 || i % 5 == 0) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            partialMessage = "<div>FizzBuzz</div>";
+        } else if (i % 3 == 0) {
+            partialMessage = "<div>Fizz</div>";
+        } else if (i % 5 == 0) {
+            partialMessage = "<div>Buzz</div>";
+        }
+    } else {
+        partialMessage = "<div>" + i + "</div>";
     }
 
     if (i <= 25) {
