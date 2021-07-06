@@ -11,14 +11,14 @@ var partialMessage;
 for (var i = 1; i <= 100; i++) {
     if (i % 3 == 0 || i % 5 == 0) {
         if (i % 3 == 0 && i % 5 == 0) {
-            partialMessage = "<div>FizzBuzz</div>";
+            partialMessage = "<li>FizzBuzz</li>";
         } else if (i % 3 == 0) {
-            partialMessage = "<div>Fizz</div>";
+            partialMessage = "<li>Fizz</li>";
         } else {
-            partialMessage = "<div>Buzz</div>";
+            partialMessage = "<li>Buzz</li>";
         }
     } else {
-        partialMessage = "<div>" + i + "</div>";
+        partialMessage = "<li>" + i + "</li>";
     }
 
     if (i <= 25) {
